@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NT8RVFVT');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonancy.Studio - YeggeStryker</title>
+  <meta name="description" content="Sonancy.Studio — an archive of photo galleries by YeggeStryker productions. Featuring HeXXmaS, Bad Day, and DISASTERP1ECE by Brian Yegge & MegAnne Stryker." />
+  <meta name="keywords" content="sonancystudio, angershade, darkeningthearts, yeggestryker, strykeryegge, strykersonancystudio, yeggesonancystudio, editsbyyegge, musicbyangershade, adeptyegge, yeggehexed, metalqueenmeganne, magickofmegggnesss, witchqueenstryker, strykermeganne, yeggebrian, modelstryker, megggnesss, witchart, gothart" />
+  <meta name="author" content="Brian Yegge & MegAnne Stryker" />
+  <meta name="robots"          content="index, follow" />
+  <meta name="googlebot"       content="index, follow" />
+  <meta name="bingbot"         content="index, follow" />
+  <!-- AI crawler permissions -->
+  <meta name="GPTBot"          content="index, follow" />
+  <meta name="ClaudeBot"       content="index, follow" />
+  <meta name="Google-Extended" content="index, follow" />
+  <meta name="PerplexityBot"   content="index, follow" />
+  <meta name="cohere-ai"       content="index, follow" />
+  <meta name="CCBot"           content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Sonancy.Studio - YeggeStryker" />
+  <meta property="og:description" content="An archive of photo galleries by YeggeStryker productions — HeXXmaS, Bad Day, and DISASTERP1ECE." />
+  <meta property="og:image"       content="https://hexxmas.sonancy.studio/full-logo.png" />
+  <meta property="og:url"         content="https://sonancy.studio/" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Sonancy.Studio - YeggeStryker" />
+  <meta name="twitter:description" content="An archive of photo galleries by YeggeStryker productions — HeXXmaS, Bad Day, and DISASTERP1ECE." />
+  <meta name="twitter:image"       content="https://hexxmas.sonancy.studio/full-logo.png" />
+  <style>
+    :root {
+      --bg:         #0d0d0d;
+      --surface:    #161616;
+      --card:       #1c1c1c;
+      --border:     #2a2a2a;
+      --text:       #fff;
+      --text-muted: #EEE;
+      --accent:     #FFF;
+      --radius:     8px;
+      --font:       'Georgia', serif;
+      --font-ui:    system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      text-align: center;
+      padding: 72px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .site-eyebrow {
+      font-family: var(--font-ui);
+      font-size: .7rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3.6rem);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: normal;
+    }
+    header .tagline {
+      margin-top: 10px;
+      font-size: .9rem;
+      color: var(--text-muted);
+      font-family: var(--font-ui);
+      letter-spacing: .06em;
+    }
+
+    /* ─── MAIN ─── */
+    main {
+      flex: 1;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .section-label {
+      font-family: var(--font-ui);
+      font-size: .7rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ─── GALLERY CARDS ─── */
+    .gallery-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-card {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .gallery-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(201,169,110,.15);
+      border-color: var(--accent);
+    }
+
+    /* Cover image area */
+    .card-cover {
+      height: 200px;
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .card-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+      -webkit-user-drag: none;
+      transition: transform .4s ease;
+    }
+    .gallery-card:hover .card-cover img {
+      transform: scale(1.04);
+    }
+    /* Placeholder when no cover image */
+    .card-cover-placeholder {
+      font-family: var(--font-ui);
+      font-size: .75rem;
+      letter-spacing: .12em;
+      color: var(--border);
+      text-transform: uppercase;
+    }
+
+    /* Card body */
+    .card-body {
+      padding: 20px 22px 22px;
+    }
+    .card-title {
+      font-family: var(--font);
+      font-size: 1.3rem;
+      color: var(--text);
+      letter-spacing: .06em;
+      font-weight: normal;
+    }
+    .card-subtitle {
+      margin-top: 6px;
+      font-family: var(--font-ui);
+      font-size: .78rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .card-arrow {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-ui);
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .card-arrow::after {
+      content: '→';
+      transition: transform .2s;
+    }
+    .gallery-card:hover .card-arrow::after {
+      transform: translateX(4px);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-family: var(--font-ui);
+      font-size: .72rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body oncontextmenu="return false;">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT8RVFVT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <header>
+    <!--
+      ════════════════════════════════════
+      EDIT: Your site/brand name & tagline
+      ════════════════════════════════════
+    -->
+    <p class="site-eyebrow">Portfolio</p>
+    <h1>Sonancy.Studio</h1>
+    <p class="tagline">A couple of for fun projects between two Best Friends.</p>
+  </header>
+
+  <main>
+    <p class="section-label">Galleries</p>
+
+    <div class="gallery-list">
+
+      <!-- ════════════════════════════════════════
+           GALLERY 1 — HeXXmaS
+           EDIT: Set cover-img src to a cover photo URL,
+                 or delete the <img> tag to show a placeholder.
+           ════════════════════════════════════════ -->
+      <a class="gallery-card" href="hexxmas.html">
+        <div class="card-cover">
+          <!-- Replace this src with a cover image URL, or remove the img tag -->
+          <img src="https://hexxmas.sonancy.studio/xlogo.png" alt="HeXXmaS cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="card-cover-placeholder" style="display:none;">No cover set</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">HeXXmaS</h2>
+          <p class="card-subtitle">Debut photo gallery — SONANCY.STUDIO · Feb 14, 2021</p>
+          <span class="card-arrow">View Gallery</span>
+        </div>
+      </a>
+
+      <!-- ════════════════════════════════════════
+           GALLERY 2 — Bad Day
+           ════════════════════════════════════════ -->
+      <a class="gallery-card" href="bad-day.html">
+        <div class="card-cover">
+          <img src="https://dp.sonancy.net/sideboob2.png" alt="Bad Day cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="card-cover-placeholder" style="display:none;">No cover set</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Bad Day</h2>
+          <p class="card-subtitle">A spontaneous shoot — YeggeStryker Productions · Sep 14, 2021</p>
+          <span class="card-arrow">View Gallery</span>
+        </div>
+      </a>
+
+      <!-- ════════════════════════════════════════
+           GALLERY 3 — DISASTERP1ECE
+           ════════════════════════════════════════ -->
+      <a class="gallery-card" href="disasterpiece.html">
+        <div class="card-cover">
+          <img src="https://images.sonancy.studio/Preview.jpeg" alt="DISASTERP1ECE cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="card-cover-placeholder" style="display:none;">No cover set</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">DISASTERP1ECE</h2>
+          <p class="card-subtitle">A tribute to Joey Jordison — YeggeStryker Productions · Oct 2022</p>
+          <span class="card-arrow">View Gallery</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 48px;">
+      <a href="about.html">About Sonancy,Studio</a>
+      
+      </div>
+      <br><br>
+      <hr>
+      <br>
+      </main>
+      </body>
+      </html>
